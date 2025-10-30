@@ -15,7 +15,7 @@ cd ADA
 
 After cloning, you'll need to download the **Breast Cancer Detection** dataset from Kaggle:
 
-1. Go to the [Breast Cancer Detection competition on Kaggle](https://www.kaggle.com/)
+1. Go to the [Breast Cancer Detection competition on Kaggle](https://www.kaggle.com/competitions/micro-club-pinktober-breast-cancer-detection/data)
 2. Download the train and test data
 3. Extract the files and place them in the following structure:
    ```
