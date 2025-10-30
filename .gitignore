@@ -1,0 +1,8 @@
+
+# Ignore data files in Breast Cancer Detection folders
+Breast Cancer Detection/test/*
+Breast Cancer Detection/train/*
+
+# But keep the .gitkeep or directory structure
+!Breast Cancer Detection/test/.gitkeep
+!Breast Cancer Detection/train/.gitkeep
