@@ -67,14 +67,16 @@ git push origin your-branch-name
 
 ### 7. Keep Your Branch Updated
 
-Regularly sync your branch with the main branch:
+If the main branch gets updated while you're working, sync your branch:
 
 ```bash
 git checkout main
 git pull origin main
 git checkout your-branch-name
-git merge main
+git rebase main
 ```
+
+**Note:** Do NOT merge or push directly to `main`. All changes must go through a pull request and be approved first.
 
 ## Project Structure
 
