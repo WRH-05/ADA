@@ -3,6 +3,14 @@
 Breast Cancer Detection/test/*
 Breast Cancer Detection/train/*
 Brain Tumor Classification/catboost_info/*
+/.github/
+
+# Ignore model checkpoint files (can be large)
+*.pkl
+*.joblib
+*.h5
+*.pth
+*.ckpt
 
 # But keep the .gitkeep or directory structure
 !Breast Cancer Detection/test/.gitkeep
