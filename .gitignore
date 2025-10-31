@@ -2,6 +2,7 @@
 # Ignore data files in Breast Cancer Detection folders
 Breast Cancer Detection/test/*
 Breast Cancer Detection/train/*
+Brain Tumor Classification/catboost_info/*
 
 # But keep the .gitkeep or directory structure
 !Breast Cancer Detection/test/.gitkeep
