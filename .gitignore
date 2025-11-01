@@ -5,7 +5,8 @@ Breast Cancer Detection/train/*
 Breast Cancer Risk Prediction/catboost_info/*
 Breast Cancer Detection/test
 Breast Cancer Detection/train
-
+Breast Cancer Risk Prediction/catboost_info
+Brain Tumor Classification/autogluon_models
 
 # But keep the .gitkeep or directory structure
 !Breast Cancer Detection/test/.gitkeep
