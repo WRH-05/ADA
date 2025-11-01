@@ -8,6 +8,10 @@ Breast Cancer Detection/train
 Breast Cancer Risk Prediction/catboost_info
 Brain Tumor Classification/autogluon_models
 
+# Ignore all model files (*.pkl) - too large for GitHub
+*.pkl
+**/*.pkl
+
 # But keep the .gitkeep or directory structure
 !Breast Cancer Detection/test/.gitkeep
 !Breast Cancer Detection/train/.gitkeep
