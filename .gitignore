@@ -2,6 +2,17 @@
 # Ignore data files in Breast Cancer Detection folders
 Breast Cancer Detection/test/*
 Breast Cancer Detection/train/*
+Brain Tumor Classification/catboost_info/*
+/.github/
+
+# Ignore model checkpoint files (can be large)
+*.pkl
+*.joblib
+*.h5
+*.pth
+*.ckpt
+Brain Tumor Classification/autogluon_models/*
+Breast Cancer Risk Prediction/catboost_info/*
 Breast Cancer Risk Prediction/catboost_info/*
 Breast Cancer Detection/test
 Breast Cancer Detection/train
