@@ -22,6 +22,8 @@ subChromium_v26_simple_average.csv = 0.89125
 
 subChromium_v4_single_catboost.csv = 0.89122
 
+subChromium_autogluon.csv = 0.89207
+
 
 ## 📊 BASELINE MODELS (Score 0.88-0.89)
 
