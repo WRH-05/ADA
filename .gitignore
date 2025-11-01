@@ -3,6 +3,9 @@
 Breast Cancer Detection/test/*
 Breast Cancer Detection/train/*
 
+Brain Tumor Classification/autogluon_models/*
+Brain Tumor Classification/catboost_info/*
+
 # But keep the .gitkeep or directory structure
 !Breast Cancer Detection/test/.gitkeep
 !Breast Cancer Detection/train/.gitkeep
