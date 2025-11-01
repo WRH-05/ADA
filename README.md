@@ -90,90 +90,33 @@ This repository contains our solutions for **three Kaggle competitions** under t
 
 ## 🚀 Getting Started
 
-### 1. Clone the Repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/WRH-05/ADA.git
 cd ADA
 ```
 
-### 2. Download Datasets
+### Download Datasets
 
-Download the competition datasets from Kaggle:
+Competition datasets can be downloaded from Kaggle:
 
-#### Breast Cancer Risk Prediction (Tabular Data)
-1. Go to [Breast Cancer Risk Prediction](https://www.kaggle.com/competitions/micro-club-pinktober-breast-cancer-risk-prediction/data)
-2. Download `train.csv`, `test.csv`, `sample_submission.csv`
-3. Place in `Breast Cancer Risk Prediction/` folder
+**Breast Cancer Risk Prediction (Tabular)**
+- [Competition Page](https://www.kaggle.com/competitions/micro-club-pinktober-breast-cancer-risk-prediction/data)
+- Download: `train.csv`, `test.csv`, `sample_submission.csv`
+- Place in: `Breast Cancer Risk Prediction/` folder
 
-#### Brain Tumor Classification (Tabular Data)
-1. Go to [Brain Tumor Classification](https://www.kaggle.com/competitions/micro-club-pinktober-brain-tumor-classification/data)
-2. Download `train.csv`, `test.csv`, `sample_submission.csv`
-3. Place in `Brain Tumor Classification/` folder
+**Brain Tumor Classification (Tabular)**
+- [Competition Page](https://www.kaggle.com/competitions/micro-club-pinktober-brain-tumor-classification/data)
+- Download: `train.csv`, `test.csv`, `sample_submission.csv`
+- Place in: `Brain Tumor Classification/` folder
 
-#### Breast Cancer Detection (Image Data)
-1. Go to [Breast Cancer Detection](https://www.kaggle.com/competitions/micro-club-pinktober-breast-cancer-detection/data)
-2. Download train and test images
-3. Extract and place in this structure:
-   ```
-   Breast Cancer Detection/
-   ├── test/
-   │   └── (place test images here)
-   └── train/
-       ├── malignant/
-       └── normal/
-   ```
+**Breast Cancer Detection (Images)**
+- [Competition Page](https://www.kaggle.com/competitions/micro-club-pinktober-breast-cancer-detection/data)
+- Download train and test images
+- Place in: `Breast Cancer Detection/test/` and `Breast Cancer Detection/train/` folders
 
-**Note:** Data files are not included in this repository due to size. They are Git-ignored to keep the repo lightweight.
-
-### 3. Create Your Branch
-
-Before making any changes, create your own branch:
-
-```bash
-git checkout -b your-branch-name
-```
-
-Use a descriptive branch name, e.g., `feature/model-improvement` or `fix/data-preprocessing`
-
-### 4. Make Your Changes
-
-- Work on your branch locally
-- Make commits regularly with clear messages:
-  ```bash
-  git add .
-  git commit -m "Clear description of what you changed"
-  ```
-
-### 5. Push Your Branch
-
-Push your branch to the remote repository:
-
-```bash
-git push origin your-branch-name
-```
-
-### 6. Create a Pull Request
-
-1. Go to the [GitHub repository](https://github.com/WRH-05/ADA)
-2. Click on "Pull requests" tab
-3. Click "New pull request"
-4. Select your branch to merge into `main`
-5. Add a clear title and description of your changes
-6. Submit the pull request for review
-
-### 7. Keep Your Branch Updated
-
-If the main branch gets updated while you're working, sync your branch:
-
-```bash
-git checkout main
-git pull origin main
-git checkout your-branch-name
-git rebase main
-```
-
-**Note:** Do NOT merge or push directly to `main`. All changes must go through a pull request and be approved first.
+**Note:** Data files are not included in this repository due to size constraints.
 
 ## 📁 Project Structure
 
@@ -263,43 +206,30 @@ ADA/
 
 ---
 
-## 📈 Competition Timeline & Milestones
+## 📈 Competition Timeline
 
-### Breast Cancer Risk Prediction
-- **Week 1**: Initial exploration, high validation scores (0.90+), terrible test scores (0.498)
-- **Week 2**: Discovery of target inversion bug → 0.503 (breakthrough!)
-- **Week 3**: Tested 17 approaches, simple XGBoost remained best
-- **Final**: 0.50316 ROC-AUC (**1st Place** by +0.00039 margin)
+**Duration**: 3-day online datathon (72 hours)
 
-### Brain Tumor Classification
-- **Week 1**: Baseline models, feature engineering (0.88-0.89)
-- **Week 2**: Ensemble experiments, reached 0.893 with stacking
-- **Week 3**: Voting ensemble breakthrough → 0.895
-- **Final**: 0.89543 F1 Score (**Top 5**)
+### Day 1: Exploration & Baseline Models
+- Initial data exploration and EDA
+- Built baseline models for all three competitions
+- **Risk Prediction**: High validation (0.90+) but poor test scores (0.498)
+- **Brain Tumor**: Achieved 0.88-0.89 F1 with feature engineering
 
----
+### Day 2: Critical Breakthroughs
+- **Risk Prediction**: Discovered target inversion bug → jumped to 0.503
+- **Brain Tumor**: Ensemble experiments pushed scores to 0.893
+- Tested multiple approaches in parallel across all competitions
 
-## 🤝 Contributing
+### Day 3: Final Optimization & Submissions
+- **Risk Prediction**: Tested 17 different approaches, simple XGBoost remained best
+- **Brain Tumor**: Voting ensemble breakthrough → 0.895
+- Final push resulted in **1st place** (Risk) and **Top 5** (Brain Tumor)
 
-### Branch Strategy
-- **main**: Protected, stable code only
-- **chrome/risk**: Breast Cancer Risk experiments
-- **chrome/brain**: Brain Tumor Classification experiments
-- **chrome/9att**: Experimental features (0.90+ attempts)
-
-### Workflow
-1. Always work on a separate branch, never directly on `main`
-2. Write clear commit messages describing what changed
-3. Test your code before creating a pull request
-4. Keep pull requests focused on a single feature or fix
-5. Update `scores.md` files when submitting to Kaggle
-
-### Code Standards
-- Document all experiments in notebooks with markdown cells
-- Track submission scores immediately after Kaggle submission
-- Use meaningful variable names (X_train, y_train, not df1, df2)
-- Include comments for complex feature engineering
-- Clean up unused cells before committing
+### Final Results
+- **Risk Prediction**: 0.50316 ROC-AUC (**1st Place** by +0.00039 margin)
+- **Brain Tumor**: 0.89543 F1 Score (**Top 5**)
+- **Total Submissions**: 50+ across all competitions in 72 hours
 
 ---
 
