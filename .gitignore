@@ -3,6 +3,8 @@
 Breast Cancer Detection/test/*
 Breast Cancer Detection/train/*
 Breast Cancer Risk Prediction/catboost_info/*
+Breast Cancer Detection/test
+Breast Cancer Detection/train
 
 
 # But keep the .gitkeep or directory structure
